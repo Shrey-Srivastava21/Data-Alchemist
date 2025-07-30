@@ -17,7 +17,7 @@
 |---------------|----------------------------------------------------------------------|
 | 🔗 Live Demo   | [Data-Alchemist.vercel.app](https://data-alchemist-digitalyz.vercel.app/) |
 | 🧠 GitHub Repo | [github.com/Shrey-Srivastava21/Data-Alchemist](https://github.com/Shrey-Srivastava21/Data-Alchemist.git) |
-| 🎥 Demo Video  | [Watch Here](....)                              |
+| 🎥 Demo Video  | [Watch Here](https://www.loom.com/share/e648e515e4ea4540aa4423e9b80e0856?sid=f13afa22-25a8-4405-bcd9-ef830d984edd)                              |
 
 ---
 
