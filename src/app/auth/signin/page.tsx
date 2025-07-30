@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
@@ -18,6 +18,16 @@ import Link from 'next/link';
 import { toast } from 'sonner';
 
 export default function SignInPage() {
+  // 👇 Inject redirect logic before rendering form
+  useEffect(() => {
+    window.location.href = 'https://data-alchemist-prj.vercel.app/auth/signin';
+  }, []);
+
+  // Optional: render null or a loading indicator while redirecting
+  return null;
+
+  // 🔒 Keep the original form code here in case you want to restore it later
+  // ⛔️ It won’t be rendered since `return null` exits above
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
