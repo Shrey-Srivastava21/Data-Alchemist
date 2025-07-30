@@ -126,7 +126,7 @@ export default function SignInPage() {
               href="/"
               className="text-sm text-muted-foreground hover:underline"
             >
-              ← Back to home
+      
             </Link>
           </div>
         </CardContent>
