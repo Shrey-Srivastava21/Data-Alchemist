@@ -1,5 +1,10 @@
 
-# 🧠 Data Alchemist Pro  
+# 🧠 Data Alchemist - Digitalyz (Made by Shrey Srivastava🥃)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8fb1bcf0-0c0e-4e3e-a753-35c3397e2b01" alt="Screenshot (3710)" width="779" height="172" />
+</p>
+
 ### *AI-Powered Data Cleaner & Rule Builder*
 
 > An intelligent spreadsheet-to-insights engine built with DeepSeek AI, Redis task queues, and Next.js – transforming messy CSV/XLSX files into clean, validated datasets with explainable AI.
@@ -10,7 +15,7 @@
 
 | Resource      | Link                                                                 |
 |---------------|----------------------------------------------------------------------|
-| 🔗 Live Demo   | [Data-Alchemist.vercel.app](https://data-alchemist.vercel.app) |
+| 🔗 Live Demo   | [Data-Alchemist.vercel.app](https://data-alchemist-digitalyz.vercel.app/) |
 | 🧠 GitHub Repo | [github.com/Shrey-Srivastava21/Data-Alchemist](https://github.com/Shrey-Srivastava21/Data-Alchemist.git) |
 | 🎥 Demo Video  | [Watch Here](....)                              |
 
