@@ -158,7 +158,7 @@ export default function SignUpPage() {
               href="https://data-alchemist-digitalyz.vercel.app/"
               className="text-sm text-muted-foreground hover:underline"
             >
-              ← Back to home
+            
             </a>
           </div>
         </CardContent>
