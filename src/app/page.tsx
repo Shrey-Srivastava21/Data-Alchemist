@@ -168,7 +168,8 @@ export default function HomePage() {
               className="px-8 relative overflow-hidden bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               asChild
             >
-              <Link href="/auth/signup" className="flex items-center">
+          
+              <Link href="https://data-alchemist-prj.vercel.app/auth/signup" className="flex items-center">
                 Get Started Free
                 <ArrowRight className="ml-2 h-4 w-4" />
                 {theme === "dark" && (
