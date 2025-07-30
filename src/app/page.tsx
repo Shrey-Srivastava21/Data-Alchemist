@@ -130,8 +130,9 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative z-40 container mx-auto px-6 py-20 text-center">
         {theme === "dark" && <Meteors number={20} />}
-
+      
         <div className="max-w-4xl mx-auto space-y-8">
+          {/* Badge section with sparkles */}
           <Badge variant="secondary" className="mb-4 relative">
             {theme === "dark" && (
               <BorderBeam size={100} duration={12} delay={9} />
@@ -141,25 +142,28 @@ export default function HomePage() {
               <span>✨ Introducing AI-Powered Resource Allocation</span>
             </AnimatedShinyText>
           </Badge>
-
-        <div className="space-y-4">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            Transform Your{" "}
-            <WordRotate
-              className="text-primary"
-              words={["Resources", "Operations", "Efficiency", "Business"]}
-            />
-            <br />
-            with AI Magic
-          </h1>
-        
-          <p className="text-sm md:text-base text-muted-foreground font-medium">
-            Developed with 💙 by{" "}
-            <span className="text-primary underline underline-offset-4 decoration-dotted hover:text-accent transition">
-              Shrey Srivastava
-            </span>
-          </p>
-        
+      
+          {/* Headline + Tagline */}
+          <div className="space-y-4">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+              Transform Your{" "}
+              <WordRotate
+                className="text-primary"
+                words={["Resources", "Operations", "Efficiency", "Business"]}
+              />
+              <br />
+              with AI Magic
+            </h1>
+      
+            <p className="text-sm md:text-base text-muted-foreground font-medium">
+              Developed with 💙 by{" "}
+              <span className="text-primary underline underline-offset-4 decoration-dotted hover:text-accent transition">
+                Shrey Srivastava
+              </span>
+            </p>
+          </div>
+      
+          {/* Subheading animated description */}
           <AnimatedGradientText>
             <span className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto block">
               The ultimate AI-powered configurator that revolutionizes how you
@@ -167,13 +171,7 @@ export default function HomePage() {
             </span>
           </AnimatedGradientText>
         </div>
-            <AnimatedGradientText>
-              <span className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto block">
-                The ultimate AI-powered configurator that revolutionizes how you
-                allocate and manage resources across your organization.
-              </span>
-            </AnimatedGradientText>
-          </div>
+      </section>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             {/* Primary CTA Button - Consistent across themes */}
