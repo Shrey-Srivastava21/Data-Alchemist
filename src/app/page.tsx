@@ -144,7 +144,7 @@ export default function HomePage() {
 
           <div className="space-y-4">
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-              Transform Your{" "}
+              Developed by Shrey Srivastava🌠 to Transform Your{" "}
               <WordRotate
                 className="text-primary"
                 words={["Resources", "Operations", "Efficiency", "Business"]}
