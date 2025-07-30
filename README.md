@@ -1,5 +1,5 @@
 
-# 🧠 Data Alchemist - Digitalyz (Made by Shrey Srivastava🥃)
+# 🧠 Data Alchemist - Digitalyz (By Shrey Srivastava🥃)
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/8fb1bcf0-0c0e-4e3e-a753-35c3397e2b01" alt="Screenshot (3710)" width="779" height="172" />
@@ -7,7 +7,7 @@
 
 ### *AI-Powered Data Cleaner & Rule Builder*
 
-> An intelligent spreadsheet-to-insights engine built with DeepSeek AI, Redis task queues, and Next.js – transforming messy CSV/XLSX files into clean, validated datasets with explainable AI.
+> An advanced spreadsheet-to-insights engine powered by DeepSeek AI, Redis task queues, and Next.js — designed to intelligently clean, validate, and transform messy CSV/XLSX files into structured, reliable datasets. With built-in explainable AI, it not only automates data preparation but also offers clear, human-understandable justifications for every transformation step.
 
 ---
 
