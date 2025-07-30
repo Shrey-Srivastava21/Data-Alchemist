@@ -41,7 +41,8 @@ export default function SignUpPage() {
     setIsLoading(true);
 
     try {
-      const response = await fetch('/api/auth/signup', {
+      // const response = await fetch('/api/auth/signup', {
+      const response = await fetch('https://data-alchemist-prj.vercel.app/api/auth/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
