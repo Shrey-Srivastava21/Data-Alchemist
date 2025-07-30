@@ -50,7 +50,8 @@ export const authOptions: NextAuthOptions = {
   // ✅ Allow extra custom page like "signUp"
   pages: {
     signIn: '/auth/signin',
-    signUp: '/auth/signup',
+    // signUp: '/auth/signup',
+    signUp: 'https://data-alchemist-prj.vercel.app/auth/signup', 
   } as any,
   callbacks: {
     async jwt({ token, user }) {
