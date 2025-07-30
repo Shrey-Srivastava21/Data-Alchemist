@@ -153,12 +153,13 @@ export default function SignUpPage() {
             </Link>
           </div>
           <div className="mt-4 text-center">
-            <Link
+            
+            <a
               href="https://data-alchemist-digitalyz.vercel.app/"
               className="text-sm text-muted-foreground hover:underline"
             >
               ← Back to home
-            </Link>
+            </a>
           </div>
         </CardContent>
       </Card>
