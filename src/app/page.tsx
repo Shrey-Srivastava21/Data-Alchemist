@@ -152,12 +152,6 @@ export default function HomePage() {
               <br />
               with AI Magic
             </h1>
-            <p className="text-sm md:text-base text-muted-foreground font-medium">
-              Developed with 💙 by{" "}
-              <span className="text-primary underline underline-offset-4 decoration-dotted hover:text-accent transition">
-                Shrey Srivastava
-              </span>
-            </p>
 
             <AnimatedGradientText>
               <span className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto block">
@@ -174,7 +168,7 @@ export default function HomePage() {
               className="px-8 relative overflow-hidden bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               asChild
             >
-              <Link href="https://data-alchemist-prj.vercel.app/auth/signup" className="flex items-center">
+              <Link href="/auth/signup" className="flex items-center">
                 Get Started Free
                 <ArrowRight className="ml-2 h-4 w-4" />
                 {theme === "dark" && (
@@ -190,7 +184,7 @@ export default function HomePage() {
               className="px-8 relative overflow-hidden border-2 border-primary/30 hover:border-primary/60 bg-background/50 backdrop-blur-sm hover:bg-primary/10 transition-all duration-300 transform hover:scale-105"
               asChild
             >
-              <Link href="https://data-alchemist-prj.vercel.app/auth/signin" className="flex items-center">
+              <Link href="/auth/signin" className="flex items-center">
                 {theme === "dark" ? "Login" : "Login"}
                 {theme === "dark" && (
                   <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-primary/20 opacity-0 hover:opacity-100 transition-opacity duration-300" />
