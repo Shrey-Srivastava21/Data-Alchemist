@@ -142,7 +142,7 @@ export default function HomePage() {
             </AnimatedShinyText>
           </Badge>
 
-        <div className="space-y-2">
+        <div className="space-y-4">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
             Transform Your{" "}
             <WordRotate
@@ -155,12 +155,18 @@ export default function HomePage() {
         
           <p className="text-sm md:text-base text-muted-foreground font-medium">
             Developed with 💙 by{" "}
-            <span className="text-primary underline decoration-dotted underline-offset-4 hover:text-accent transition">
+            <span className="text-primary underline underline-offset-4 decoration-dotted hover:text-accent transition">
               Shrey Srivastava
             </span>
           </p>
-         </div>
-
+        
+          <AnimatedGradientText>
+            <span className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto block">
+              The ultimate AI-powered configurator that revolutionizes how you
+              allocate and manage resources across your organization.
+            </span>
+          </AnimatedGradientText>
+        </div>
             <AnimatedGradientText>
               <span className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto block">
                 The ultimate AI-powered configurator that revolutionizes how you
