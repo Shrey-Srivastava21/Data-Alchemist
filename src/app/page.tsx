@@ -130,9 +130,8 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative z-40 container mx-auto px-6 py-20 text-center">
         {theme === "dark" && <Meteors number={20} />}
-      
+
         <div className="max-w-4xl mx-auto space-y-8">
-          {/* Badge section with sparkles */}
           <Badge variant="secondary" className="mb-4 relative">
             {theme === "dark" && (
               <BorderBeam size={100} duration={12} delay={9} />
@@ -142,8 +141,7 @@ export default function HomePage() {
               <span>✨ Introducing AI-Powered Resource Allocation</span>
             </AnimatedShinyText>
           </Badge>
-      
-          {/* Headline + Tagline */}
+
           <div className="space-y-4">
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
               Transform Your{" "}
@@ -154,24 +152,20 @@ export default function HomePage() {
               <br />
               with AI Magic
             </h1>
-      
             <p className="text-sm md:text-base text-muted-foreground font-medium">
               Developed with 💙 by{" "}
               <span className="text-primary underline underline-offset-4 decoration-dotted hover:text-accent transition">
                 Shrey Srivastava
               </span>
             </p>
+
+            <AnimatedGradientText>
+              <span className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto block">
+                The ultimate AI-powered configurator that revolutionizes how you
+                allocate and manage resources across your organization.
+              </span>
+            </AnimatedGradientText>
           </div>
-      
-          {/* Subheading animated description */}
-          <AnimatedGradientText>
-            <span className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto block">
-              The ultimate AI-powered configurator that revolutionizes how you
-              allocate and manage resources across your organization.
-            </span>
-          </AnimatedGradientText>
-        </div>
-      </section>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             {/* Primary CTA Button - Consistent across themes */}
@@ -180,8 +174,7 @@ export default function HomePage() {
               className="px-8 relative overflow-hidden bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               asChild
             >
-          
-              <Link href="https://data-alchemist-prj.vercel.app/auth/signup" className="flex items-center">
+              <Link href="/auth/signup" className="flex items-center">
                 Get Started Free
                 <ArrowRight className="ml-2 h-4 w-4" />
                 {theme === "dark" && (
