@@ -41,7 +41,6 @@ export default function SignUpPage() {
     setIsLoading(true);
 
     try {
-      // const response = await fetch('/api/auth/signup', {
       const response = await fetch('https://data-alchemist-prj.vercel.app/api/auth/signup', {
         method: 'POST',
         headers: {
@@ -56,7 +55,8 @@ export default function SignUpPage() {
 
       if (response.ok) {
         toast.success('Account created successfully!');
-        router.push('/auth/signin');
+        // ✅ Redirect to the correct hosted sign-in page
+        window.location.href = 'https://data-alchemist-prj.vercel.app/auth/signin';
       } else {
         const data = await response.json();
         toast.error(data.message || 'Something went wrong');
@@ -149,7 +149,10 @@ export default function SignUpPage() {
             <span className="text-muted-foreground">
               Already have an account?{' '}
             </span>
-            <Link href="/auth/signin" className="text-primary hover:underline">
+            <Link
+              href="https://data-alchemist-prj.vercel.app/auth/signin"
+              className="text-primary hover:underline"
+            >
               Sign in
             </Link>
           </div>
