@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -18,7 +18,6 @@ import {
   Cpu,
   Target,
 } from "lucide-react";
-
 import Link from "next/link";
 
 // MagicUI Components
@@ -31,7 +30,6 @@ import { BorderBeam } from "@/components/magicui/border-beam";
 import { Meteors } from "@/components/magicui/meteors";
 import { SparklesText } from "@/components/magicui/sparkles-text";
 import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
-import { useRef } from "react";
 
 export default function HomePage() {
   const { theme, setTheme } = useTheme();
@@ -128,61 +126,60 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section */}
-    {/* Hero Section */}
-    <section className="relative z-40 container mx-auto px-6 py-20 text-center">
-      {theme === "dark" && <Meteors number={20} />}
-    
-      <div className="max-w-4xl mx-auto space-y-8">
-        {/* Badge section with sparkles */}
-        <Badge variant="secondary" className="mb-4 relative">
-          {theme === "dark" && (
-            <BorderBeam size={100} duration={12} delay={9} />
-          )}
-          <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-            <Sparkles className="mr-1 size-3 transition-transform duration-300 ease-in-out group-hover:scale-105" />
-            <span>✨ Introducing AI-Powered Resource Allocation</span>
-          </AnimatedShinyText>
-        </Badge>
-    
-        {/* Headline + Tagline */}
-        <div className="space-y-4">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            Transform Your{" "}
-            <WordRotate
-              className="text-primary"
-              words={["Resources", "Operations", "Efficiency", "Business"]}
-            />
-            <br />
-            with AI Magic
-          </h1>
-    
-          <p className="text-sm md:text-base text-muted-foreground font-medium">
-            Developed with 💙 by{" "}
-            <span className="text-primary underline underline-offset-4 decoration-dotted hover:text-accent transition">
-              Shrey Srivastava
+      <section className="relative z-40 container mx-auto px-6 py-20 text-center">
+        {theme === "dark" && <Meteors number={20} />}
+
+        <div className="max-w-4xl mx-auto space-y-8">
+          {/* Badge */}
+          <Badge variant="secondary" className="mb-4 relative">
+            {theme === "dark" && (
+              <BorderBeam size={100} duration={12} delay={9} />
+            )}
+            <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
+              <Sparkles className="mr-1 size-3" />
+              <span>✨ Introducing AI-Powered Resource Allocation</span>
+            </AnimatedShinyText>
+          </Badge>
+
+          {/* Headline + Tagline */}
+          <div className="space-y-4">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+              Transform Your{" "}
+              <WordRotate
+                className="text-primary"
+                words={["Resources", "Operations", "Efficiency", "Business"]}
+              />
+              <br />
+              with AI Magic
+            </h1>
+
+            <p className="text-sm md:text-base text-muted-foreground font-medium">
+              Developed with 💙 by{" "}
+              <span className="text-primary underline underline-offset-4 decoration-dotted hover:text-accent transition">
+                Shrey Srivastava
+              </span>
+            </p>
+          </div>
+
+          {/* Subheading */}
+          <AnimatedGradientText>
+            <span className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto block">
+              The ultimate AI-powered configurator that revolutionizes how you
+              allocate and manage resources across your organization.
             </span>
-          </p>
-        </div>
-    
-        {/* Subheading animated description */}
-        <AnimatedGradientText>
-          <span className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto block">
-            The ultimate AI-powered configurator that revolutionizes how you
-            allocate and manage resources across your organization.
-          </span>
-        </AnimatedGradientText>
-      </div>
-    </section>
+          </AnimatedGradientText>
 
-
+          {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-            {/* Primary CTA Button - Consistent across themes */}
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="px-8 relative overflow-hidden bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               asChild
             >
-              <Link href="https://data-alchemist-prj.vercel.app/auth/signup" className="flex items-center">
+              <Link
+                href="https://data-alchemist-prj.vercel.app/auth/signup"
+                className="flex items-center"
+              >
                 Get Started Free
                 <ArrowRight className="ml-2 h-4 w-4" />
                 {theme === "dark" && (
@@ -191,7 +188,6 @@ export default function HomePage() {
               </Link>
             </Button>
 
-            {/* Secondary Button - Consistent across themes */}
             <Button
               variant="outline"
               size="lg"
@@ -199,7 +195,7 @@ export default function HomePage() {
               asChild
             >
               <Link href="/auth/signin" className="flex items-center">
-                {theme === "dark" ? "Login" : "Login"}
+                Login
                 {theme === "dark" && (
                   <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-primary/20 opacity-0 hover:opacity-100 transition-opacity duration-300" />
                 )}
@@ -254,7 +250,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Animated Beams */}
+          {/* Beams */}
           <AnimatedBeam
             containerRef={containerRef}
             fromRef={div1Ref}
@@ -360,7 +356,8 @@ export default function HomePage() {
               <span className="font-semibold">Data Alchemist</span>
             </div>
             <p className="text-muted-foreground text-sm">
-              © 2025 Data Alchemist. All rights reserved. Designed by Shrey Srivastava💖
+              © 2025 Data Alchemist. All rights reserved. Designed by Shrey
+              Srivastava💖
             </p>
           </div>
         </div>
