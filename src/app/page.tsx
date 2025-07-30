@@ -142,16 +142,24 @@ export default function HomePage() {
             </AnimatedShinyText>
           </Badge>
 
-          <div className="space-y-4">
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-              Developed by Shrey Srivastava🌠 to Transform Your{" "}
-              <WordRotate
-                className="text-primary"
-                words={["Resources", "Operations", "Efficiency", "Business"]}
-              />
-              <br />
-              with AI Magic
-            </h1>
+        <div className="space-y-2">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+            Transform Your{" "}
+            <WordRotate
+              className="text-primary"
+              words={["Resources", "Operations", "Efficiency", "Business"]}
+            />
+            <br />
+            with AI Magic
+          </h1>
+        
+          <p className="text-sm md:text-base text-muted-foreground font-medium">
+            Developed with 💙 by{" "}
+            <span className="text-primary underline decoration-dotted underline-offset-4 hover:text-accent transition">
+              Shrey Srivastava
+            </span>
+          </p>
+         </div>
 
             <AnimatedGradientText>
               <span className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto block">
